@@ -1,0 +1,358 @@
+{
+    /*
+    ! https://github.com/nickshiro/vsconfig
+    */
+    //* VSC update
+    "update.mode": "manual",
+    "update.showReleaseNotes": true,
+    "update.enableWindowsBackgroundUpdates": false,
+
+    //* VSC security
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+
+    //* Extensions
+    "extensions.webWorker": true,
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": true,
+    "extensions.ignoreRecommendations": true,
+
+    //* Files
+    "files.autoSave": "off",
+    "files.maxMemoryForLargeFilesMB": 8196,
+    "files.autoGuessEncoding": true,
+    "files.trimTrailingWhitespace": true,
+
+    //* Editor
+    "editor.lineNumbers": "on",
+    "editor.folding": true,
+    "editor.stablePeek": false,
+    "editor.glyphMargin": false,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.stickyScroll.enabled": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.renderLineHighlight": "line",
+    "scm.diffDecorations": "none",
+    "editor.mouseWheelScrollSensitivity": 2,
+    "editor.scrollBeyondLastLine": false,
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.horizontalScrollbarSize": 8,
+    "editor.scrollbar.vertical": "visible",
+    "editor.scrollbar.verticalScrollbarSize": 8,
+    "editor.smoothScrolling": true,
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.padding.top": 2,
+    "editor.padding.bottom": 0,
+    "editor.fontFamily": "Fira Code Medium, monospace",
+    "editor.fontLigatures": "'ss04', 'ss08', 'ss10', 'cv02', 'cv14', 'cv18', 'cv29', 'cv31'",
+    "editor.fontSize": 14,
+    "editor.letterSpacing": 0,
+    "editor.lineHeight": 0,
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.suggest.showWords": false,
+    "editor.suggest.showSnippets": true,
+    "editor.suggest.showClasses": true,
+    "editor.suggest.showFunctions": true,
+    "editor.suggest.showVariables": true,
+    "editor.suggest.showModules": true,
+    "editor.suggest.showValues": true,
+    "editor.suggest.showMethods": true,
+    "editor.suggest.showKeywords": true,
+    "editor.suggest.showColors": false,
+    "editor.suggest.showFiles": true,
+    "editor.suggest.showFolders": true,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    },
+    "editor.suggestSelection": "first",
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.linkedEditing": true,
+
+    //* Integrated terminal
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.env.windows": {},
+    "terminal.integrated.defaultProfile.windows": "Nushell",
+    "terminal.integrated.mouseWheelScrollSensitivity": 1,
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontWeight": "normal",
+    "terminal.integrated.fontFamily": "Fira Code Medium, monospace",
+    "terminal.integrated.fontLigatures.enabled": true,
+
+    //* Window
+    "window.menuBarVisibility": "toggle",
+    "window.commandCenter": false,
+    "window.confirmBeforeClose": "keyboardOnly",
+    "window.customMenuBarAltFocus": false,
+    "window.density.editorTabHeight": "compact",
+    "window.newWindowDimensions": "inherit",
+    "window.openFilesInNewWindow": "off",
+    "window.restoreFullscreen": true,
+    "window.restoreWindows": "all",
+    "window.title": "${rootName}",
+    "window.zoomLevel": 0,
+
+    //* Explorer
+    "explorer.autoReveal": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmPasteNative": false,
+    "explorer.decorations.badges": false,
+    "explorer.decorations.colors": true,
+    "explorer.fileNesting.enabled": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    //* Workbench
+    "workbench.productIconTheme": "material-product-icons",
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "workbench.statusBar.visible": true,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.tree.indent": 16,
+    "workbench.tree.expandMode": "doubleClick",
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "poimandres-noitalics",
+    "material-icon-theme.activeIconPack": "react_redux",
+    "workbench.list.smoothScrolling": true,
+    "workbench.list.mouseWheelScrollSensitivity": 2,
+    "workbench.editor.decorations.badges": false,
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.labelFormat": "default",
+    "workbench.editor.tabActionLocation": "right",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.wrapTabs": true,
+    "workbench.panel.showLabels": false,
+    "workbench.activityBar.location": "default",
+
+    //* Goto
+    "references.preferredLocation": "view",
+    "testing.automaticallyOpenPeekView": "never",
+
+    //* Breadcrumbs
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.icons": false,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.showKeys": false,
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFields": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showMethods": false,
+    "breadcrumbs.showNumbers": false,
+    "breadcrumbs.showObjects": false,
+    "breadcrumbs.showModules": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showPackages": false,
+    "breadcrumbs.showFunctions": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showOperators": false,
+    "breadcrumbs.showInterfaces": false,
+    "breadcrumbs.showNamespaces": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showConstructors": false,
+
+    //* Import cost (extension)
+    "importCost.margin": 1,
+    "importCost.fontStyle": "italic",
+    "importCost.bundleSizeDecoration": "both",
+    "importCost.showCalculatingDecoration": true,
+    "importCost.smallPackageDarkColor": "#5DE4C7",
+    "importCost.mediumPackageDarkColor": "#A6ACCD",
+    "importCost.largePackageDarkColor": "#D0679D",
+
+    //* Inline fold (extension)
+    "inlineFold.autoFold": true,
+    "inlineFold.togglePerFile": true,
+    "inlineFold.maskChar": "•⩊•",
+    "inlineFold.unfoldedOpacity": 1,
+    "inlineFold.maskColor": "#98C379",
+    "inlineFold.regex": "(class|className)=(({(`|))|(['\"`]))(.*?)(\\2|(\\4)})",
+
+    //* Highlight matching tag (extension)
+    "highlight-matching-tag.enabled": true,
+    "highlight-matching-tag.styles": {
+      "opening": {
+        "name": {
+          "underline": "#98C379"
+        }
+      },
+      "closing": {
+        "name": {
+          "underline": "#98C379"
+        }
+      }
+    },
+
+    //* Code runner (extension)
+    "python.terminal.executeInFileDir": true,
+    "code-runner.runInTerminal": true,
+
+    //* Todo tree (extension)
+    "todo-tree.highlights.enabled": false,
+    "todo-tree.highlights.useColourScheme": false,
+    "todo-tree.tree.autoRefresh": true,
+    "todo-tree.tree.disableCompactFolders": true,
+    "todo-tree.tree.expanded": true,
+    "todo-tree.tree.flat": true,
+    "todo-tree.tree.scanAtStartup": true,
+
+    //* Format
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": "biomejs.biome",
+    //? Biome
+    "biome.enabled": true,
+    "biome.rename": false,
+    //? Eslint
+    "eslint.run": "onSave",
+    "eslint.format.enable": true,
+    //? Prettier
+    "prettier.useEditorConfig": true,
+    "prettier.requireConfig": true,
+
+    //* Emmet (shortcut for html tags)
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.optimizeStylesheetParsing": true,
+    "emmet.includeLanguages": {
+      "blade": "html",
+      "svelte": "html",
+      "svelte-css": "css"
+    },
+
+    //* Languages config
+    "files.associations": {
+      "*.css": "tailwindcss"
+    },
+    //? JavaScript
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.importModuleSpecifier": "shortest",
+    "javascript.suggest.autoImports": true,
+    "javascript.preferences.renameMatchingJsxTags" : true,
+    "javascript.autoClosingTags": true,
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    //? TypeScript
+    "[typescript]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "biomejs.biome",
+    },
+    "typescript.preferences.renameMatchingJsxTags" : true,
+    "typescript.suggest.autoImports": true,
+    "typescript.preferences.autoImportFileExcludePatterns": [],
+    "typescript.preferences.importModuleSpecifier": "shortest",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.autoClosingTags": true,
+    //? Css
+    "[css]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[tailwindcss]": {
+      "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
+    },
+    //? Html
+    "[html]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    //? Svelte
+    "svelte.enable-ts-plugin": true,
+    //? Json
+    "[json, jsonc]": {
+      "editor.defaultFormatter": "biomejs.biome",
+    },
+    //? Prisma
+    "[prisma]": {
+      "editor.defaultFormatter": "Prisma.prisma"
+    },
+    //? Md
+    "[mdx, md]": {
+      "editor.fontLigatures": false,
+    },
+    //? Zig
+    "zig.zls.enabled": "on",
+    //? C
+    "clangd.path": "/home/nick/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/19.1.2/clangd_19.1.2/bin/clangd",
+
+    //* Telemetry
+    "telemetry.telemetryLevel": "off",
+    "redhat.telemetry.enabled": false,
+    "postman.telemetry.enabled": false,
+
+    //* Git
+    "git.enableSmartCommit": true,
+
+    //* Ignore
+    "[ignore]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+
+    //* Terminal suggestions
+    "terminal.integrated.suggest.enabled": true,
+    "terminal.integrated.suggest.enableExtensionCompletions": true,
+
+    //* Git
+    "git.openRepositoryInParentFolders": "never",
+
+    //* Debug
+    "debug.enableStatusBarColor": false,
+
+    //* Discord
+    "vscord.status.idle.enabled": true,
+    "vscord.status.idle.check": false,
+    "vscord.status.idle.timeout": 99999,
+    "vscord.status.details.text.idle": "Chilling...",
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.image.large.idle.key": "https://media.tenor.com/VdIKn05yIh8AAAAM/cat-sleep.gif",
+    "vscord.status.image.large.idle.text": "Cat",
+    "vscord.behaviour.statusBarAlignment": "Right",
+    "vscord.status.buttons.button2.active.enabled": true,
+    "vscord.status.buttons.button2.active.label": "✨ GitHub",
+    "vscord.status.buttons.button2.active.url": "https://github.com/nickshiro",
+    "vscord.status.buttons.button1.git.active.enabled": false,
+    "vscord.status.details.enabled": true,
+    "vscord.status.details.text.editing": "{workspace}",
+    "vscord.status.details.text.notInFile": "Chilling...",
+    "vscord.status.details.text.viewing": "{workspace}",
+    "vscord.status.image.large.editing.key": "https://media1.tenor.com/m/lG6REFx2fI0AAAAd/geniy.gif",
+    "vscord.status.image.large.editing.text": "Ponasenkov",
+    "vscord.status.image.large.notInFile.key": "https://media.tenor.com/VdIKn05yIh8AAAAM/cat-sleep.gif",
+    "vscord.status.image.large.viewing.key": "https://media1.tenor.com/m/lG6REFx2fI0AAAAd/geniy.gif",
+    "vscord.status.image.large.viewing.text": "Ponasenkov",
+    "vscord.status.image.small.editing.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/{lang}.png",
+    "vscord.status.image.small.editing.text": "{LANG}",
+    "vscord.status.image.small.viewing.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/{lang}.png",
+    "vscord.status.image.small.viewing.text": "{LANG}",
+    "vscord.status.showElapsedTime": false,
+    "vscord.status.state.idle.enabled": false,
+    "vscord.status.state.text.editing": "{file_name}{file_extension}",
+    "vscord.status.state.text.viewing": "{file_name}{file_extension}",
+    "vscord.status.problems.enabled": false,
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false,
+      "typescript": true,
+      "typescriptreact": true,
+      "tailwindcss": true
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "liveshare.anonymousGuestApproval": "accept",
+  }
