@@ -1,0 +1,24 @@
+# Theme
+general.import = [ "theme.toml" ]
+
+[window]
+title = "Terminal"
+dynamic_title = true
+startup_mode = "Windowed"
+
+[font]
+# normal
+normal.family = "JetBrains Mono Nerd Font"
+normal.style = "Medium"
+italic.family = "JetBrains Mono Nerd Font"
+italic.style = "Medium Italic"
+# bold
+bold.family = "JetBrains Mono Nerd Font"
+bold.style = "Bold"
+bold_italic.family = "JetBrains Mono Nerd Font"
+bold_italic.style = "Bold Italic"
+# size
+size = 10.0
+
+[mouse]
+hide_when_typing = true
