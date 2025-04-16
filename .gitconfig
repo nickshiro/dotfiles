@@ -5,6 +5,7 @@
 	name = Nick
 [alias]
     tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ac = "!git add . && git commit -m"
 [init]
 	defaultBranch = main
 	
