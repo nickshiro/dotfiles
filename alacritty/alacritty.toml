@@ -4,7 +4,7 @@ general.import = [ "theme.toml" ]
 [window]
 title = "Terminal"
 dynamic_title = true
-startup_mode = "Windowed"
+startup_mode = "Maximized"
 
 [font]
 # normal
