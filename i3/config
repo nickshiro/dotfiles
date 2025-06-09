@@ -176,6 +176,9 @@ bar {
 
 exec i3-config-wizard
 
+# Notifications 
+exec --no-startup-id dunst
+
 # Wallpapers
 exec --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/mac.jpg
 
