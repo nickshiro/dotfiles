@@ -7,17 +7,14 @@ dynamic_title = true
 startup_mode = "Maximized"
 
 [font]
-# normal
 normal.family = "JetBrains Mono Nerd Font"
-normal.style = "Medium"
+normal.style = "Bold" 
 italic.family = "JetBrains Mono Nerd Font"
-italic.style = "Medium Italic"
-# bold
+italic.style = "Bold Italic"  
 bold.family = "JetBrains Mono Nerd Font"
 bold.style = "Bold"
 bold_italic.family = "JetBrains Mono Nerd Font"
 bold_italic.style = "Bold Italic"
-# size
 size = 10.0
 
 [mouse]
