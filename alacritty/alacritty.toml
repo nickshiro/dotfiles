@@ -7,14 +7,10 @@ dynamic_title = true
 startup_mode = "Maximized"
 
 [font]
-normal.family = "JetBrains Mono Nerd Font"
-normal.style = "Bold" 
-italic.family = "JetBrains Mono Nerd Font"
-italic.style = "Bold Italic"  
-bold.family = "JetBrains Mono Nerd Font"
-bold.style = "Bold"
-bold_italic.family = "JetBrains Mono Nerd Font"
-bold_italic.style = "Bold Italic"
+normal = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Extrabold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 size = 10.0
 
 [mouse]
