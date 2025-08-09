@@ -1,0 +1,13 @@
+general {
+    output_format = "i3bar"
+    colors = true
+    interval = 5
+}
+
+order += "wireless lan0"
+order += "battery 0"
+order += "time"
+
+time {
+    format = "%d %b %Y %H:%M"
+}
