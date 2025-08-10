@@ -43,6 +43,14 @@ bindkey "^K" history-search-backward
 PROMPT=$'%F{blue}┌──(%F{red}%B%n%F{red}@%F{red}%m%F{blue}%b) %B%F{red}%~%F{reset}%b \n%F{cyan}└─%F%B%(#.%F{red}#.%F{red}$)%b%F{reset} '
 
 # bun
+alias b='bun'
 [ -s "/root/.bun/_bun" ] && source "/root/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# pnpm
+export PNPM_HOME="/home/nick/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
