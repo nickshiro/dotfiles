@@ -10,8 +10,16 @@ startup_mode = "Maximized"
 normal = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Extrabold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
-bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Extrabold Italic" }
 size = 10.0
+
+[cursor.style]
+blinking = "Never"
 
 [mouse]
 hide_when_typing = true
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Control|Shift"
