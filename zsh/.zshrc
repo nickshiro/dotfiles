@@ -33,7 +33,7 @@ bindkey "^a" beginning-of-line
 bindkey "^N" history-search-forward
 bindkey "^P" history-search-backward
 
-PROMPT=$'%F{red}%B%n@%m%F{red}%b %B%F{red}%~%F{reset}%b \n%B%F{red}λ%b%F{reset} '
+PROMPT=$'%F{yellow}%B%n@%m%F{yelow}%b %B%F{yellow}%~%F{reset}%b \n%B%F{yellow}λ%b%F{reset} '
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
