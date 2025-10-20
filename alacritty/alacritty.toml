@@ -1,5 +1,5 @@
 # Theme
-general.import = [ "theme.toml" ]
+general.import = [ "./themes/arc.toml" ]
 
 [window]
 title = "Terminal"
