@@ -1,17 +1,19 @@
-# Theme
-general.import = [ "./themes/arc.toml" ]
+[general]
+import = [ "./themes/arc.toml" ]
+live_config_reload = true
 
 [window]
-title = "Terminal"
-dynamic_title = true
 startup_mode = "Maximized"
+decorations = "None"
+dynamic_padding = false
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Extrabold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 bold_italic = { family = "JetBrainsMono Nerd Font", style = "Extrabold Italic" }
-size = 10.0
+size = 10
+offset = { y = 0, x = 0}
 
 [cursor.style]
 blinking = "Never"
