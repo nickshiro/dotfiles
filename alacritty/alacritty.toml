@@ -1,5 +1,5 @@
 [general]
-import = [ "./themes/arc.toml" ]
+import = [ "./themes/silentium.toml" ]
 live_config_reload = true
 
 [window]
