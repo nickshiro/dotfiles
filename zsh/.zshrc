@@ -10,16 +10,12 @@ setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS      
 setopt HIST_REDUCE_BLANKS    
 
-export EDITOR=nvim
-
 setopt AUTO_CD
 alias ..='cd ..'
 
 alias ls='eza'
 alias ll='eza -lh'
 alias la='eza -A'
-
-alias cat='bat'
 
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select
@@ -34,6 +30,8 @@ bindkey "^N" history-search-forward
 bindkey "^P" history-search-backward
 
 PROMPT=$'%F{yellow}%B%n@%m%F{yelow}%b %B%F{yellow}%~%F{reset}%b \n%B%F{yellow}λ%b%F{reset} '
+
+export EDITOR=nvim
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
