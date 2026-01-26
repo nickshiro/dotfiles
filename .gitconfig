@@ -1,12 +1,14 @@
 [url "git@github.com:"]
 	insteadOf = https://github.com/
     insteadOf = gh:
+[url "git@codeberg.org:"]
+    insteadOf = https://codeberg.org/
+    insteadOf = cb:
 [user]
 	email = rudbsm@gmail.com
 	name = Nick
 [alias]
-    tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    tree = log --graph --oneline --decorate --all
     ac = "!git add . && git commit -m"
 [init]
 	defaultBranch = main
-	
