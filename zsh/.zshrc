@@ -10,9 +10,6 @@ setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS      
 setopt HIST_REDUCE_BLANKS    
 
-setopt AUTO_CD
-alias ..='cd ..'
-
 alias ls='eza'
 alias ll='eza -lh'
 alias la='eza -A'
