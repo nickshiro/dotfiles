@@ -6,9 +6,6 @@ default_border pixel 0
 # workspaces
 workspace 8 output eDP1
 
-# apps
-set $terminal alacritty
-
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
@@ -28,17 +25,7 @@ floating_modifier $mod
 
 tiling_drag modifier titlebar
 
-# open terminal 
-bindsym $mod+Return exec $terminal
-
-# kill focused window
-bindsym $mod+Shift+q kill
-
-# Start dmenu 
-bindsym $mod+d exec --no-startup-id ~/.config/i3/dmenu.sh
-# Notifications 
-exec --no-startup-id dunst
-# Wallpapers
+# wallpapers
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/mac.jpg
 
 # change focus
@@ -61,28 +48,6 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-# split in horizontal orientation
-# bindsym $mod+h split h
-# split in vertical orientation
-bindsym $mod+v split v
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-# focus the parent container
-bindsym $mod+a focus parent
-# move the currently focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-bindsym $mod+minus scratchpad show
 
 set $ws1 "1"
 set $ws2 "2"
@@ -119,11 +84,30 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# Screenshots
-bindsym $mod+Print exec --no-startup-id bash -c 'maim -s | xclip -selection clipboard -t image/png'
+# screenshots
+bindsym $mod+s exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
+bindsym $mod+Shift+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+# bluetooth
+bindsym $mod+b exec --no-startup-id bash -c 'alacritty -e bluetui'
+# start dmenu 
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "JetBrains Mono-11"
+# open terminal 
+bindsym $mod+Return exec 'alacritty'
 
+# split in horizontal orientation
+# bindsym $mod+h split h
+# split in vertical orientation
+bindsym $mod+v split v
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+# focus the parent container
+bindsym $mod+a focus parent
+
+# kill focused window
+bindsym $mod+Shift+q kill
 # restart i3 inplace
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -151,14 +135,12 @@ bar {
     font pango:JetBrains Mono 11
 
     colors {
-        background       #1B1E28
-        focused_workspace #FCD34D #FCD34D #000000
-        inactive_workspace #2A2C34 #2A2C34 #ffffff
-        urgent_workspace #D0679D #D0679D #ffffff
-        active_workspace #2A2C34 #2A2C34 #ffffff
+        background       #141414
+        focused_workspace #F6CE4E #F6CE4E #141414
+        inactive_workspace #282828 #282828 #E6E6E6
+        urgent_workspace #E85A4F #E85A4F #E6E6E6
+        active_workspace #282828 #282828 #E6E6E6
     }
 }
 
-# Keyboard layout
-# EN, RU languges and Ctrl on CapsLock
 exec_always --no-startup-id "setxkbmap -layout us,ru -option grp:alt_shift_toggle,ctrl:nocaps"
