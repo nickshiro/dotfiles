@@ -30,9 +30,11 @@ PROMPT=$'%F{yellow}%B%n@%m%F{yelow}%b %B%F{yellow}%~%F{reset}%b \n%B%F{yellow}λ
 
 export EDITOR=nvim
 
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-[[ -s "$BUN_INSTALL/_bun" ]] && source "$BUN_INSTALL/_bun"
-
+# pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
-[[ ":$PATH:" != *":$PNPM_HOME:"* ]] && export PATH="$PNPM_HOME:$PATH"
+export PATH="$PNPM_HOME:$PATH"
+
+fpath=(~/.zsh/completions $fpath)
+
+autoload -Uz compinit
+compinit
