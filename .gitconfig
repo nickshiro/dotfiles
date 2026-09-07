@@ -9,8 +9,12 @@
     name = Nick
 [alias]
     tree = log --graph --oneline --decorate --all --max-count=25
+    recent = log --oneline --decorate -10
 [init]
-    defaultBranch = main
+    defaultBranch = master
+[push]
+    autoSetupRemote = true
+    default = simple
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
