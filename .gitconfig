@@ -4,11 +4,16 @@
 [url "git@codeberg.org:"]
     insteadOf = https://codeberg.org/
     insteadOf = cb:
+[url "git@tangled.org:"]
+    insteadOf = https://tangled.org/
+    insteadOf = tg:
 [user]
     email = rudbsm@gmail.com
     name = Nick
+    signkey = ~/.ssh/id_ed25519.pub
+    signingkey = ~/.ssh/git_signing
 [alias]
-    tree = log --graph --oneline --decorate --all --max-count=25
+    tree = log --graph --oneline --decorate --all --max-count=30
     recent = log --oneline --decorate -10
 [init]
     defaultBranch = master
@@ -21,3 +26,11 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[core]
+	quotePath = false
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers

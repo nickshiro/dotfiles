@@ -10,10 +10,6 @@ setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS      
 setopt HIST_REDUCE_BLANKS    
 
-alias ls='eza'
-alias ll='eza -lh'
-alias la='eza -A'
-
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' auto-description 'specify: %d'
